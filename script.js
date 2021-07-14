@@ -85,6 +85,8 @@ function generatePrompts(question, type, characterSet) {
 
 //function to create password options
 function createPassword() {
+  //clears array each time the function runs
+  allPossibleOptions = [];
   //intial prompt to get password length
   passwordLength = generatePrompts(
     "How long do you want your password to be?",
